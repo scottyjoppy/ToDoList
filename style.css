@@ -1,48 +1,68 @@
 @font-face {
     font-family: "Roboto";
-    src: url(Roboto-Regular.ttf);
+    src: url(Fonts/Roboto-Regular.ttf);
 }
 
 :root {
-    --color1: #092635;
-    --color2: #1B4242;
-    --color3: #5C8374;
-    --color4: #9EC8B9;
-
-    --color5: #181C14;
-    --color6: #3C3d37;
-    --color7: #697565;
-    --color8: #ECDFCC;
-
-    --color9: #DFF2EB;
-    --color10: #B9E5E8;
-    --color11: #7AB2D3;
-    --color12: #4A628A;
-
+    --color1: #606c38;
+    --color2: #283618;
+    --color3: #fefae0;
+    --color4: #dda15e;
+    --color5: #bc6c25;
 }
 
 * {
     font-family: "Roboto";
-    color: var(--color1);
-    background-color: var(--color3);
 }
 
-.sidebar-background {
+body{
+    background-color: var(--color3);
+    color: var(--color4);
+}
+
+button {
     background-color: var(--color4);
-    stroke: #092635;
+    color: var(--color5);
+    border: none;
+    height: 40px;
+    font-size: 20px ;
+    cursor:pointer;
+}
+
+.text{
+    margin-left: 400px;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color2);
 }
 
 .sidebar {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    z-index: 1;
+    /*box*/
     display: flex;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    background-color: var(--color1);
+    box-shadow: 10px 0 0 var(--color2);
+    top: 0; /*force to top */
+    left: 0;/*force to left */
+    overflow-x: hidden; /*disable hori scroll*/
+    
+    /* box items */
     flex-direction: column;
-    gap: 20px;
-    top: 0;
-    left: 0;
-    overflow-x: hidden; /*disable hor scroll*/
-    padding-top: 20px;
-    font-size: 30px;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    padding-left: 20px;
+
+    /* items */
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
 }
