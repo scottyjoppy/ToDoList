@@ -1,5 +1,6 @@
 const root = document.documentElement;
 const button = document.getElementById('test');
+const body = document.body;
 
 
 
@@ -14,12 +15,12 @@ let colors = [
 let index = 0;
 
 const nextCol = () => {
-    for (let i = 0; i < colors[0].length; i++) {
-        root.style.setProperty('--color' + [i + 1], colors[index][i])
-    }
     index += 1;
     if(index === colors.length){
         index = 0
+    }
+    for (let i = 0; i < colors[0].length; i++) {
+        root.style.setProperty('--color' + [i + 1], colors[index][i])
     }
 }
  

@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="sidebar-background">
-        <div class="sidebar">
+    <div class="sidebar">
+        <div class="top">
             <a href="#">
                 <?xml version="1.0" ?><svg class="feather feather-search" fill="none" height="24" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
@@ -22,35 +22,38 @@
                 </svg>
                 Search
             </a>
-            <a href="index.html">
-                <?xml version="1.0" ?><svg class="feather feather-home" fill="none" height="24" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                    <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
-                Home
-            </a>
-            <a href="habit-tracker.html">
-                <?xml version="1.0" ?><svg class="feather feather-calendar" fill="none" height="24"
-                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <rect height="18" rx="2" ry="2" width="18" x="3" y="4" />
-                    <line x1="16" x2="16" y1="2" y2="6" />
-                    <line x1="8" x2="8" y1="2" y2="6" />
-                    <line x1="3" x2="21" y1="10" y2="10" />
-                </svg>
-                Habit Tracker
-            </a>
-            <a href="to-do.html">
-                <?xml version="1.0" ?><svg class="feather feather-check-square" fill="none" height="24"
-                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <polyline points="9 11 12 14 22 4" />
-                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-                </svg>
-                To Do List
-            </a>
+        </div>
+        <a href="index.html">
+            <?xml version="1.0" ?><svg class="feather feather-home" fill="none" height="24" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            Home
+        </a>
+        <a href="habit-tracker.html">
+            <?xml version="1.0" ?><svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect height="18" rx="2" ry="2" width="18" x="3" y="4" />
+                <line x1="16" x2="16" y1="2" y2="6" />
+                <line x1="8" x2="8" y1="2" y2="6" />
+                <line x1="3" x2="21" y1="10" y2="10" />
+            </svg>
+            Habit Tracker
+        </a>
+        <a href="to-do.html">
+            <?xml version="1.0" ?><svg class="feather feather-check-square" fill="none" height="24"
+                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="9 11 12 14 22 4" />
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+            To Do List
+        </a>
+        <div class="bottom">
+
             <a href="#">
                 <?xml version="1.0" ?><svg class="feather feather-trash-2" fill="none" height="24" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
@@ -62,11 +65,20 @@
                 </svg>
                 Trash
             </a>
+            <div class="button-sidebar">
+                <button id="test">
+                    <?xml version="1.0" ?><svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                            d="M15 11H18C18.5523 11 19 11.4477 19 12V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V12C5 11.4477 5.44772 11 6 11H9V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V11ZM13 6C13 5.44772 12.5523 5 12 5C11.4477 5 11 5.44772 11 6V13H7V18C7 18.5523 7.44772 19 8 19H9V16H11V19H13V16H15V19H16C16.5523 19 17 18.5523 17 18V13H13V6Z"
+                            fill="currentColor" fill-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
     <h1 class="text">Home</h1>
-    <button id="test" class="text">Change Color</button>
 
 
     <script src="app.js"></script>

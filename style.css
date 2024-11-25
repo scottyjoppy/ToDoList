@@ -15,21 +15,35 @@
     font-family: "Roboto";
 }
 
-body{
+body {
     background-color: var(--color3);
     color: var(--color4);
 }
 
 button {
-    background-color: var(--color4);
-    color: var(--color5);
+    background-color: var(--color2);
+    color: var(--color1);
     border: none;
-    height: 40px;
-    font-size: 20px ;
-    cursor:pointer;
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    font-size: 10px;
+    display: flex;
+    padding: 0;
+
+    cursor: pointer;
 }
 
-.text{
+#textarea { /*Make this an input instead*/
+    text-decoration: none;
+    border: none;
+    background-color: var(--color3);
+    outline: none;
+    resize: none;
+    scrollbar-width: none;
+}
+
+.text {
     margin-left: 400px;
 }
 
@@ -50,10 +64,13 @@ a {
     z-index: 1;
     background-color: var(--color1);
     box-shadow: 10px 0 0 var(--color2);
-    top: 0; /*force to top */
-    left: 0;/*force to left */
-    overflow-x: hidden; /*disable hori scroll*/
-    
+    top: 0;
+    /*force to top */
+    left: 0;
+    /*force to left */
+    overflow-x: hidden;
+    /*disable hori scroll*/
+
     /* box items */
     flex-direction: column;
     justify-content: center;
@@ -65,4 +82,25 @@ a {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 20px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    margin-top: 20px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.button-sidebar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
