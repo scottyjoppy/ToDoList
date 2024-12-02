@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const button = document.getElementById('test');
 const body = document.body;
+const textArea = document.getElementById('textarea');
 
 
 
@@ -25,3 +26,9 @@ const nextCol = () => {
 }
  
 button.addEventListener('click', nextCol)
+textArea.addEventListener('input', () => {
+    localStorage.setItem("todo", JSON.stringify(textArea.value))
+})
+
+const savedTodo = JSON.parse(localStorage.getItem("todo"))
+textArea.value = savedTodo;
